@@ -1,7 +1,9 @@
 # Portfolio de Bartomeu Mut Vidal
 
 - Hablar en español y explicar brevemente los pasos y comprobaciones.
-- Stack: Astro estático, TypeScript y TailwindCSS. Preparado para Vercel.
+- Hacer commits locales con mensajes en inglés conforme avance el trabajo. No hacer push, merges ni tags sin indicación expresa del usuario. Trabajar en la rama activa autorizada mientras se revisa el rediseño.
+- Escribir commits y README íntegramente en inglés. El portfolio está disponible en EN, ES y CA mediante rutas independientes.
+- Stack: Vue 3 con Nuxt, generación estática, TypeScript y TailwindCSS. Preparado para Vercel. Idiomas: EN, ES y CA.
 - Crear cada cambio en una rama `feature/*` desde `develop`; usar `hotfix/*` desde `main` para correcciones urgentes en producción.
 - No desarrollar directamente en `main` ni `develop`. Rebase solo sobre ramas propias sin colaboradores; nunca reescribir ramas compartidas.
 - Integrar features mediante pull request hacia `develop`. Preparar releases en `release/*`, integrar en `main`, crear tags SemVer anotados y sincronizar `develop`.

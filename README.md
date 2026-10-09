@@ -23,7 +23,7 @@ npm run preview
 
 The website supports English (`/en/`), Spanish (`/es/`), and Catalan (`/ca/`). The root URL redirects to Spanish. Each page provides a language selector and localized HTML language and metadata.
 
-- `src/data/profile.ts`: resume-based professional information.
+- `src/data/profile.ts`: resume-based professional information, GitHub profile, and selected public projects with translated descriptions.
 - `src/data/i18n.ts`: translated interface, career, education, and language content.
 - `app/components/PortfolioPage.vue`: shared Vue page layout.
 - `app/pages/[lang].vue`: language routing and validation.
@@ -31,6 +31,24 @@ The website supports English (`/en/`), Spanish (`/es/`), and Catalan (`/ca/`). T
 - `public/favicon.svg`: site identity.
 
 The original resume PDF, phone number, and postal address are excluded. No projects, metrics, or credentials have been invented. Future case studies should include real projects, personal contributions, and verifiable outcomes.
+
+## GitHub projects
+
+The projects section links to the [GitHub profile](https://github.com/TomeuMut) and highlights Ferment SaaS (frontend and API), Tomeu Ferments, and Librewrary. Descriptions and technologies were checked against their public repositories and README files. Librewrary is explicitly marked as on hold, following its README.
+
+Project information is curated locally and rendered in English, Spanish, and Catalan. The website does not call the GitHub API at runtime or require an API token. Edit the `projects` array in `src/data/profile.ts` to change the selection or update its descriptions.
+
+Tomeu Ferments also links to its [Instagram profile](https://www.instagram.com/tomeuferments/) from its project card and the About section. Its fermentation, maceration, and traditional recipe focus is based on the user's description. Instagram posts were not accessible during review; the site uses a direct link without embeds or automatic synchronization.
+
+## Icons and professional profiles
+
+Icons use `@phosphor-icons/vue` with explicit component imports, size props, and theme colors. Decorative icons are hidden from assistive technology; icon-only links have accessible names.
+
+The layout uses a desktop sidebar, a collapsible mobile menu, a portrait-led introduction, and a featured project. The blue theme combines charcoal (`#1B262C`), deep blue (`#0F4C75`), medium blue (`#3282B8`), and pale blue (`#BBE1FA`). Global semantic theme variables live in the `@theme` block of `src/styles/global.css`: `--color-primary`, `--color-secondary`, `--color-accent`, and `--color-background`. Surface, text, border, hover, and overlay roles derive from that palette using CSS `color-mix()`. Update `public/favicon.svg` and the theme-color metadata in `nuxt.config.ts` when changing browser branding. The optimized portrait is `public/images/bartomeu-mut.jpg` (960 × 1440, approximately 123 KB); the original camera file stays local and is excluded from Git.
+
+The contact area links to the supplied LinkedIn profile. Publicly indexed LinkedIn information was reconciled manually with the supplied resume, including the AI automation workshop at Refineria using Make and Zapier. Employment dates and job titles remain based on the user-provided resume. There is no automatic LinkedIn synchronization or runtime scraping.
+
+Source: [AI automation workshop at Refineria](https://es.linkedin.com/posts/bartomeu-mut-vidal-61774aa0_hoy-ha-sido-un-d%C3%ADa-muy-interesante-junto-activity-7267264878040543233-mtcU).
 
 ## Git Flow
 
@@ -75,6 +93,6 @@ Reference: [Codex instructions with AGENTS.md](https://developers.openai.com/cod
 
 ## Validation notes
 
-Type checking and static generation passed. Generated pages were checked for translated content, language metadata, navigation targets, contact links, asset paths, and exclusion of the private phone number. Visual browser QA remains pending because the integrated browser was unavailable.
+Type checking and static generation passed for English, Spanish, and Catalan. The redesigned page was visually reviewed in desktop and mobile Chrome after the integrated browser proved unavailable. At a 390 px mobile viewport, the document had no horizontal overflow, the portrait loaded, and the menu expanded with the expected accessible state. Previous content checks covered language metadata, navigation targets, contact links, asset paths, and exclusion of the private phone number.
 
 The dependency audit still reports advisories in transitive Nuxt tooling dependencies after compatible fixes. Do not use a forced downgrade as an automatic remedy. Development tools are disabled in the site configuration; Vercel serves the generated static files, not a Nuxt development server.

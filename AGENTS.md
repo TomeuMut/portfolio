@@ -1,6 +1,7 @@
 # Portfolio de Bartomeu Mut Vidal
 
 - Hablar en español y explicar brevemente los pasos y comprobaciones.
+- Hacer commits locales con mensajes en inglés conforme avance el trabajo. No hacer push, merges ni tags sin indicación expresa del usuario. Trabajar en la rama activa autorizada mientras se revisa el rediseño.
 - Escribir commits y README íntegramente en inglés. El portfolio está disponible en EN, ES y CA mediante rutas independientes.
 - Stack: Vue 3 con Nuxt, generación estática, TypeScript y TailwindCSS. Preparado para Vercel. Idiomas: EN, ES y CA.
 - Crear cada cambio en una rama `feature/*` desde `develop`; usar `hotfix/*` desde `main` para correcciones urgentes en producción.

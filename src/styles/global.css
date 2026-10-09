@@ -2,13 +2,14 @@
 
 @theme {
   /* Edit these four palette colors to retheme the portfolio. */
-  --color-primary: #40513B;
-  --color-secondary: #609966;
-  --color-accent: #9DC08B;
-  --color-background: #EDF1D6;
+  --color-primary: #1B262C;
+  --color-secondary: #0F4C75;
+  --color-accent: #3282B8;
+  --color-background: #BBE1FA;
 
   /* Semantic roles derive from the palette. */
   --color-surface: #ffffff;
+  --color-on-secondary: var(--color-surface);
   --color-text: var(--color-primary);
   --color-text-muted: color-mix(in srgb, var(--color-primary) 80%, var(--color-secondary));
   --color-text-inverse-muted: var(--color-background);
@@ -117,7 +118,7 @@ h2 em { color: var(--color-text-muted); font-family: Georgia, serif; font-weight
 .project-cover { min-height: 190px; position: relative; display: flex; align-items: center; justify-content: center; background: var(--color-primary); color: var(--color-surface); padding: 2rem; }
 .project-card:first-child .project-cover { min-height: 270px; }
 .project-card-2 .project-cover { background: var(--color-accent); color: var(--color-on-accent); }
-.project-card-3 .project-cover { background: var(--color-secondary); color: var(--color-on-accent); }
+.project-card-3 .project-cover { background: var(--color-secondary); color: var(--color-on-secondary); }
 .project-code { position: absolute; top: 1.2rem; left: 1.4rem; font: .7rem var(--font-mono); }
 .project-cover-name { position: absolute; bottom: 1.2rem; left: 1.4rem; font-size: .85rem; font-weight: 600; }
 .project-body { padding: 1.8rem; }

@@ -38,6 +38,8 @@ The projects section links to the [GitHub profile](https://github.com/TomeuMut) 
 
 Project information is curated locally and rendered in English, Spanish, and Catalan. The website does not call the GitHub API at runtime or require an API token. Edit the `projects` array in `src/data/profile.ts` to change the selection or update its descriptions.
 
+Tomeu Ferments also links to its [Instagram profile](https://www.instagram.com/tomeuferments/) from its project card and the About section. Its fermentation, maceration, and traditional recipe focus is based on the user's description. Instagram posts were not accessible during review; the site uses a direct link without embeds or automatic synchronization.
+
 ## Icons and professional profiles
 
 Icons use `@phosphor-icons/vue` with explicit component imports and TailwindCSS sizing and color utilities. Decorative icons are hidden from assistive technology; links retain text labels.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhBriefcase, PhCode, PhEnvelopeSimple, PhGithubLogo, PhKanban, PhLinkedinLogo, PhMapPin, PhUsersThree } from '@phosphor-icons/vue';
+import { PhBriefcase, PhCode, PhEnvelopeSimple, PhGithubLogo, PhInstagramLogo, PhKanban, PhLinkedinLogo, PhMapPin, PhUsersThree } from '@phosphor-icons/vue';
 import { languageOptions, translations, type Language } from '../../src/data/i18n';
 import { profile, projects } from '../../src/data/profile';
 
@@ -80,6 +80,7 @@ useHead(() => ({
           </div>
           <div>
             <div class="space-y-5 text-base leading-relaxed text-slate-600"><p v-for="paragraph in t.aboutParagraphs" :key="paragraph">{{ paragraph }}</p></div>
+            <p class="mt-5 text-base leading-relaxed text-slate-600">{{ t.personalProjectIntro }} <a :href="profile.fermentsInstagram" class="font-medium text-emerald-800 underline decoration-emerald-800/40 underline-offset-4 hover:decoration-emerald-800">Tomeu Ferments</a>.</p>
             <ul class="mt-7 flex flex-wrap gap-x-5 gap-y-3 border-t border-slate-200 pt-6 text-sm text-emerald-800"><li v-for="interest in t.aboutInterests" :key="interest">{{ interest }}</li></ul>
           </div>
         </div>
@@ -127,7 +128,10 @@ useHead(() => ({
               <h3 class="mt-7 text-2xl font-semibold tracking-tight">{{ project.name }}</h3>
               <p class="mt-4 text-base leading-relaxed text-slate-600">{{ project.description[language] }}</p>
               <ul :aria-label="t.stackLabel" class="mt-6 flex flex-wrap gap-2"><li v-for="technology in project.technologies" :key="technology" class="rounded-sm bg-slate-100 px-3 py-1.5 text-xs text-slate-600">{{ technology }}</li></ul>
-              <div class="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-8"><a v-for="repository in project.repositories" :key="repository.url" :href="repository.url" :aria-label="`${t.repositoryLabel}: ${project.name}${repository.label ? ` · ${repository.label}` : ''}`" class="inline-flex items-center gap-2 border-b border-emerald-800 pb-1 text-sm font-semibold text-emerald-800 hover:text-ink"><PhCode class="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />{{ repository.label || t.repositoryLabel }}</a></div>
+              <div class="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-8">
+                <a v-for="repository in project.repositories" :key="repository.url" :href="repository.url" :aria-label="`${t.repositoryLabel}: ${project.name}${repository.label ? ` · ${repository.label}` : ''}`" class="inline-flex items-center gap-2 border-b border-emerald-800 pb-1 text-sm font-semibold text-emerald-800 hover:text-ink"><PhCode class="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />{{ repository.label || t.repositoryLabel }}</a>
+                <a v-if="project.instagram" :href="project.instagram" :aria-label="`${t.instagramProject}: ${project.name}`" class="inline-flex items-center gap-2 border-b border-emerald-800 pb-1 text-sm font-semibold text-emerald-800 hover:text-ink"><PhInstagramLogo class="h-4 w-4 shrink-0" aria-hidden="true" focusable="false" />Instagram</a>
+              </div>
             </article>
           </div>
         </div>

@@ -4,6 +4,7 @@ export const profile = {
   email: 'tomeumutvidal@gmail.com',
   github: 'https://github.com/TomeuMut',
   linkedin: 'https://www.linkedin.com/in/bartomeu-mut-vidal-61774aa0/',
+  fermentsInstagram: 'https://www.instagram.com/tomeuferments/',
   location: 'Mallorca, España',
   title: 'Frontend Developer',
   description: 'Frontend Developer en OmniAccess con experiencia full stack, gestión de proyectos y comunicación con clientes. Mi siguiente paso: Project Manager.',
@@ -90,7 +91,16 @@ export const languages = [
   { name: 'Inglés', level: 'A2' },
 ];
 
-export const projects = [
+type Project = {
+  name: string;
+  description: Record<'en' | 'es' | 'ca', string>;
+  technologies: string[];
+  repositories: { label: string; url: string }[];
+  instagram?: string;
+  paused: boolean;
+};
+
+export const projects: Project[] = [
   {
     name: 'Ferment SaaS',
     description: {
@@ -108,12 +118,13 @@ export const projects = [
   {
     name: 'Tomeu Ferments',
     description: {
-      en: 'A digital presentation of Tomeu Ferments: a space for sharing handmade fermentation recipes, infusions, and other living preparations.',
-      es: 'Presentación digital de Tomeu Ferments: un espacio para compartir recetas artesanales de fermentados, macerados y otras preparaciones vivas.',
-      ca: 'Presentació digital de Tomeu Ferments: un espai per compartir receptes artesanals de fermentats, macerats i altres preparacions vives.',
+      en: 'My personal project exploring fermentation, maceration, and traditional recipes. I share this interest on Instagram, alongside a website built with OctoberCMS and TailwindCSS.',
+      es: 'Mi proyecto personal de fermentación, maceración y recetas tradicionales. Comparto esta afición en Instagram y la acompaño con una web desarrollada con OctoberCMS y TailwindCSS.',
+      ca: 'El meu projecte personal de fermentació, maceració i receptes tradicionals. Compartesc aquesta afició a Instagram i l’acompany amb una web desenvolupada amb OctoberCMS i TailwindCSS.',
     },
     technologies: ['OctoberCMS', 'PHP', 'TailwindCSS'],
     repositories: [{ label: '', url: 'https://github.com/TomeuMut/tomeuferments' }],
+    instagram: profile.fermentsInstagram,
     paused: false,
   },
   {

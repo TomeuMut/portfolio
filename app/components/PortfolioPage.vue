@@ -13,7 +13,7 @@ function languagePath(language: Language) {
 
 useHead(() => ({
   htmlAttrs: { lang: props.language },
-  title: `${profile.name} · Full Stack Developer · Team Lead / PM`,
+  title: `${profile.name} · ${profile.title} · Project Manager`,
   meta: [
     { name: 'description', content: t.value.description },
     { property: 'og:type', content: 'website' },
@@ -59,7 +59,7 @@ useHead(() => ({
           <aside :aria-label="t.nextStep" class="flex flex-col justify-end border-t border-white/20 pt-7 md:border-t-0 md:border-l md:pl-7 xl:pl-9">
             <div class="mb-7 hidden font-mono text-6xl font-light tracking-[-.12em] text-white/15 md:block" aria-hidden="true">&lt;bm /&gt;</div>
             <p class="eyebrow mb-3 text-slate-400">{{ t.nextStep }}</p>
-            <p class="text-2xl leading-snug font-medium tracking-tight">Team Lead<br />Project Manager</p>
+            <p class="text-2xl leading-snug font-medium tracking-tight">Project Manager</p>
             <p class="mt-4 text-sm leading-relaxed text-slate-300">{{ t.ambition }}</p>
             <div class="mt-7 border-t border-white/15 pt-5">
               <p class="text-sm text-slate-300">{{ t.location }}</p>

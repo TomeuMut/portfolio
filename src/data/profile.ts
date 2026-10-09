@@ -1,6 +1,7 @@
 export const profile = {
   name: 'Bartomeu Mut Vidal',
   shortName: 'Bartomeu Mut',
+  portrait: '/images/bartomeu-mut.jpg',
   email: 'tomeumutvidal@gmail.com',
   github: 'https://github.com/TomeuMut',
   linkedin: 'https://www.linkedin.com/in/bartomeu-mut-vidal-61774aa0/',

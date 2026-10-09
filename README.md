@@ -42,7 +42,9 @@ Tomeu Ferments also links to its [Instagram profile](https://www.instagram.com/t
 
 ## Icons and professional profiles
 
-Icons use `@phosphor-icons/vue` with explicit component imports and TailwindCSS sizing and color utilities. Decorative icons are hidden from assistive technology; links retain text labels.
+Icons use `@phosphor-icons/vue` with explicit component imports, size props, and theme colors. Decorative icons are hidden from assistive technology; icon-only links have accessible names.
+
+The layout uses a desktop sidebar, a collapsible mobile menu, a portrait-led introduction, and a featured project. The theme combines coral (`#F67280`), rose (`#C06C84`), violet (`#6C5B7B`), and blue (`#355C7D`) with light neutral backgrounds. The optimized portrait is `public/images/bartomeu-mut.jpg` (960 × 1440, approximately 123 KB); the original camera file stays local and is excluded from Git.
 
 The contact area links to the supplied LinkedIn profile. Publicly indexed LinkedIn information was reconciled manually with the supplied resume, including the AI automation workshop at Refineria using Make and Zapier. Employment dates and job titles remain based on the user-provided resume. There is no automatic LinkedIn synchronization or runtime scraping.
 
@@ -91,6 +93,6 @@ Reference: [Codex instructions with AGENTS.md](https://developers.openai.com/cod
 
 ## Validation notes
 
-Type checking and static generation passed. Generated pages were checked for translated content, language metadata, navigation targets, contact links, asset paths, and exclusion of the private phone number. Visual browser QA remains pending because the integrated browser was unavailable.
+Type checking and static generation passed for English, Spanish, and Catalan. The redesigned page was visually reviewed in desktop and mobile Chrome after the integrated browser proved unavailable. At a 390 px mobile viewport, the document had no horizontal overflow, the portrait loaded, and the menu expanded with the expected accessible state. Previous content checks covered language metadata, navigation targets, contact links, asset paths, and exclusion of the private phone number.
 
 The dependency audit still reports advisories in transitive Nuxt tooling dependencies after compatible fixes. Do not use a forced downgrade as an automatic remedy. Development tools are disabled in the site configuration; Vercel serves the generated static files, not a Nuxt development server.

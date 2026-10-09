@@ -11,6 +11,7 @@ export const isLanguage = (value: unknown): value is Language => languageOptions
 const es = {
   locale: 'es_ES', description: profile.description,
   skip: 'Saltar al contenido', home: 'Inicio', language: 'Idioma',
+  menuOpen: 'Abrir menú', menuClose: 'Cerrar menú', portraitAlt: 'Retrato de Bartomeu Mut Vidal',
   nav: ['Sobre mí', 'Experiencia', 'Mi enfoque', 'GitHub', 'Stack', 'Hablemos'],
   aboutLabel: 'Sobre mí', aboutTitle: ['Curioso por naturaleza.', 'Atento a los detalles.'],
   aboutParagraphs: [
@@ -48,6 +49,7 @@ const en: typeof es = {
   locale: 'en_GB',
   description: 'Frontend Developer at OmniAccess with full stack experience, project management, and client communication. My next step: Project Manager.',
   skip: 'Skip to content', home: 'Home', language: 'Language',
+  menuOpen: 'Open menu', menuClose: 'Close menu', portraitAlt: 'Portrait of Bartomeu Mut Vidal',
   nav: ['About me', 'Experience', 'My approach', 'GitHub', 'Stack', 'Let’s talk'],
   aboutLabel: 'About me', aboutTitle: ['Curious by nature.', 'Attentive to detail.'],
   aboutParagraphs: [
@@ -110,6 +112,7 @@ const ca: typeof es = {
   locale: 'ca_ES',
   description: 'Frontend Developer a OmniAccess amb experiència full stack, gestió de projectes i comunicació amb clients. El meu pròxim pas: Project Manager.',
   skip: 'Salta al contingut', home: 'Inici', language: 'Idioma',
+  menuOpen: 'Obrir el menú', menuClose: 'Tancar el menú', portraitAlt: 'Retrat de Bartomeu Mut Vidal',
   nav: ['Sobre mi', 'Experiència', 'El meu enfocament', 'GitHub', 'Stack', 'Parlem'],
   aboutLabel: 'Sobre mi', aboutTitle: ['Curiós per naturalesa.', 'Atent als detalls.'],
   aboutParagraphs: [

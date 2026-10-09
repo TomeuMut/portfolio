@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      meta: [{ name: 'theme-color', content: '#101c2c' }],
+      meta: [{ name: 'theme-color', content: '#355C7D' }],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     },
   },

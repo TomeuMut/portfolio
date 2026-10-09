@@ -75,7 +75,7 @@ useHead(() => ({
           <div class="page-shell hero-grid">
             <div class="hero-copy">
               <p class="eyebrow">{{ t.eyebrow }}</p>
-              <h1 id="hero-title" class="hero-title">Bartomeu<br />Mut Vidal<span class="coral-dot">.</span></h1>
+              <h1 id="hero-title" class="hero-title">Bartomeu<br />Mut Vidal<span class="accent-dot">.</span></h1>
               <p class="hero-statement">{{ t.hero[0] }}<br /><span>{{ t.hero[1] }}</span></p>
               <p class="hero-intro">{{ t.introAfter }}</p>
               <div class="hero-actions">

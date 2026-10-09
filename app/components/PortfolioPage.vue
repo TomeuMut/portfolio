@@ -6,7 +6,7 @@ import { profile, projects } from '../../src/data/profile';
 const props = defineProps<{ language: Language }>();
 const t = computed(() => translations[props.language]);
 const year = new Date().getFullYear();
-const sections = ['experience', 'approach', 'projects', 'stack', 'contact'];
+const sections = ['about', 'experience', 'approach', 'projects', 'stack', 'contact'];
 const strengthIcons = [PhCode, PhUsersThree, PhKanban];
 
 function languagePath(language: Language) {
@@ -70,6 +70,19 @@ useHead(() => ({
           </aside>
         </div>
         <div class="border-t border-white/10"><div class="shell flex flex-wrap justify-between gap-4 py-5 font-mono text-xs text-slate-400"><span>{{ t.profileLabel }}</span><span>{{ t.tagline }}</span></div></div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title" class="border-b border-slate-200 bg-white py-20 md:py-28">
+        <div class="shell grid gap-8 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <p class="eyebrow mb-5 text-emerald-800">{{ t.aboutLabel }}</p>
+            <h2 id="about-title" class="section-heading">{{ t.aboutTitle[0] }}<br /><span class="serif italic">{{ t.aboutTitle[1] }}</span></h2>
+          </div>
+          <div>
+            <div class="space-y-5 text-base leading-relaxed text-slate-600"><p v-for="paragraph in t.aboutParagraphs" :key="paragraph">{{ paragraph }}</p></div>
+            <ul class="mt-7 flex flex-wrap gap-x-5 gap-y-3 border-t border-slate-200 pt-6 text-sm text-emerald-800"><li v-for="interest in t.aboutInterests" :key="interest">{{ interest }}</li></ul>
+          </div>
+        </div>
       </section>
 
       <section id="approach" aria-labelledby="approach-title" class="shell py-20 md:py-28">

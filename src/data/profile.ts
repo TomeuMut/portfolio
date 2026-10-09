@@ -3,6 +3,7 @@ export const profile = {
   shortName: 'Bartomeu Mut',
   email: 'tomeumutvidal@gmail.com',
   github: 'https://github.com/TomeuMut',
+  linkedin: 'https://www.linkedin.com/in/bartomeu-mut-vidal-61774aa0/',
   location: 'Mallorca, España',
   title: 'Frontend Developer',
   description: 'Frontend Developer en OmniAccess con experiencia full stack, gestión de proyectos y comunicación con clientes. Mi siguiente paso: Project Manager.',
@@ -48,6 +49,7 @@ export const experience = [
       'Desarrollo con PHP, Laravel y OctoberCMS; frontend con Vue y Nuxt.',
       'Gestión de proyectos y comunicación directa con clientes.',
       'Formación y mentoría de nuevos talentos, promoviendo buenas prácticas.',
+      'Coimpartición de un taller de automatización con IA en Refineria, con Make y Zapier.',
       'Gestión de datos y documentación con MySQL y Microsoft SQL.',
     ],
     tags: ['Laravel', 'Vue / Nuxt', 'Gestión de proyectos', 'Mentoría'],
@@ -74,7 +76,7 @@ export const stack = [
   { label: 'Frontend', items: ['Vue 3', 'Nuxt', 'Svelte', 'Angular', 'HTML5 / CSS3', 'JavaScript / jQuery', 'SASS', 'TailwindCSS', 'Vuetify', 'Bootstrap'] },
   { label: 'Datos', items: ['MySQL', 'SQL Server', 'SQLite'] },
   { label: 'Entrega y colaboración', items: ['Git', 'GitLab', 'Git Flow', 'Jira', 'Scrum', 'Agile', 'CI/CD', 'Docker'] },
-  { label: 'IA aplicada', items: ['Claude Code', 'Agents', 'Skills'] },
+  { label: 'IA aplicada', items: ['Claude Code', 'Agents', 'Skills', 'Make', 'Zapier'] },
 ];
 
 export const education = [

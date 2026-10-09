@@ -38,6 +38,14 @@ The projects section links to the [GitHub profile](https://github.com/TomeuMut) 
 
 Project information is curated locally and rendered in English, Spanish, and Catalan. The website does not call the GitHub API at runtime or require an API token. Edit the `projects` array in `src/data/profile.ts` to change the selection or update its descriptions.
 
+## Icons and professional profiles
+
+Icons use `@phosphor-icons/vue` with explicit component imports and TailwindCSS sizing and color utilities. Decorative icons are hidden from assistive technology; links retain text labels.
+
+The contact area links to the supplied LinkedIn profile. Publicly indexed LinkedIn information was reconciled manually with the supplied resume, including the AI automation workshop at Refineria using Make and Zapier. Employment dates and job titles remain based on the user-provided resume. There is no automatic LinkedIn synchronization or runtime scraping.
+
+Source: [AI automation workshop at Refineria](https://es.linkedin.com/posts/bartomeu-mut-vidal-61774aa0_hoy-ha-sido-un-d%C3%ADa-muy-interesante-junto-activity-7267264878040543233-mtcU).
+
 ## Git Flow
 
 - `main`: releasable versions; `develop`: integration.

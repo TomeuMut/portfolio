@@ -1,6 +1,6 @@
 # Portfolio · Bartomeu Mut Vidal
 
-A multilingual professional portfolio for a full stack developer moving toward Team Lead or Project Manager roles. Built with Vue 3, Nuxt, TypeScript, and TailwindCSS. All three language versions are prerendered as static HTML for Vercel.
+A multilingual professional portfolio for a Frontend Developer at OmniAccess growing toward Project Manager roles, building on project management and client communication experience at Refineria and IT2b. Built with Vue 3, Nuxt, TypeScript, and TailwindCSS. All three language versions are prerendered as static HTML for Vercel.
 
 ## Local development
 

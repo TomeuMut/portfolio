@@ -3,21 +3,37 @@ export const profile = {
   shortName: 'Bartomeu Mut',
   email: 'tomeumutvidal@gmail.com',
   location: 'Mallorca, España',
-  title: 'Senior Full Stack Developer',
-  description: 'Desarrollador full stack con experiencia en gestión de proyectos, comunicación con clientes y mentoría. Mi siguiente paso: Team Lead o Project Manager.',
+  title: 'Frontend Developer',
+  description: 'Frontend Developer en OmniAccess con experiencia full stack, gestión de proyectos y comunicación con clientes. Mi siguiente paso: Project Manager.',
 };
 
 export const experience = [
   {
+    company: 'OmniAccess',
+    role: 'Frontend Developer',
+    period: 'Nov. 2025 — actualidad',
+    location: 'Palma de Mallorca · Híbrido',
+    summary: 'Desarrollo frontend en un entorno de trabajo ágil, con integración de APIs, herramientas de entrega continua y tecnologías full stack.',
+    points: [
+      'Desarrollo con Vue 3, Nuxt, Svelte, TailwindCSS y Vuetify; JavaScript y jQuery.',
+      'Trabajo con NestJS, Laravel, APIs, MySQL y SQLite.',
+      'Git, GitLab y Git Flow; Jira, Scrum y Agile; CI/CD y Docker.',
+      'Uso de IA, Claude Code, agentes y skills en el desarrollo.',
+    ],
+    tags: ['Vue 3 / Nuxt', 'Svelte', 'Jira / Scrum', 'CI/CD', 'Docker'],
+  },
+  {
     company: 'IT2B',
-    role: 'Senior Full Stack Developer · Project Manager',
-    period: 'Ene. 2025 — actualidad',
+    role: 'Senior Software Developer / Project Manager',
+    period: 'Ene. — oct. 2025',
     location: 'Palma de Mallorca',
     summary: 'Desarrollo web full stack y colaboración con clientes y equipos para dar respuesta a las necesidades de cada proyecto.',
     points: [
       'Desarrollo de backend con Symfony y frontend con Angular.',
       'Atención directa a clientes y colaboración entre departamentos.',
-      'Interfaces con HTML, CSS, SASS, TailwindCSS y Material.',
+      'Interfaces con HTML5, CSS3, TailwindCSS, Bootstrap, JavaScript y jQuery.',
+      'Integración de APIs y trabajo con MySQL y SQL Server.',
+      'Git y Git Flow, Scrum y Agile, e integración y entrega continuas (CI/CD).',
     ],
     tags: ['Symfony', 'Angular', 'TailwindCSS', 'Clientes'],
   },
@@ -49,13 +65,15 @@ export const experience = [
 export const strengths = [
   { number: '01', title: 'Criterio técnico', text: 'Experiencia de extremo a extremo: backend, interfaces y bases de datos. Una base para entender las decisiones técnicas y sus implicaciones en un proyecto.', label: 'Desarrollo full stack' },
   { number: '02', title: 'Conexión con el cliente', text: 'Comunicación directa con clientes y gestión de proyectos. Entender las necesidades y trabajar con otros departamentos forma parte de mi recorrido.', label: 'Gestión y comunicación' },
-  { number: '03', title: 'Acompañar al equipo', text: 'He formado y guiado a nuevos talentos, compartiendo buenas prácticas. Quiero seguir creciendo en liderazgo técnico y gestión de equipos.', label: 'Mentoría y liderazgo' },
+  { number: '03', title: 'Acompañar la entrega', text: 'En Refineria combiné desarrollo, gestión de proyectos y comunicación con clientes. En IT2b trabajé como Senior Software Developer / Project Manager. Quiero seguir creciendo en gestión de proyectos desde esa base técnica.', label: 'Gestión de proyectos' },
 ];
 
 export const stack = [
-  { label: 'Backend', items: ['PHP', 'Symfony', 'Laravel', 'OctoberCMS'] },
-  { label: 'Frontend', items: ['Vue', 'Nuxt', 'Angular', 'HTML / CSS', 'SASS', 'TailwindCSS'] },
-  { label: 'Datos', items: ['MySQL', 'Microsoft SQL'] },
+  { label: 'Backend', items: ['PHP', 'Symfony', 'Laravel', 'NestJS', 'OctoberCMS', 'APIs'] },
+  { label: 'Frontend', items: ['Vue 3', 'Nuxt', 'Svelte', 'Angular', 'HTML5 / CSS3', 'JavaScript / jQuery', 'SASS', 'TailwindCSS', 'Vuetify', 'Bootstrap'] },
+  { label: 'Datos', items: ['MySQL', 'SQL Server', 'SQLite'] },
+  { label: 'Entrega y colaboración', items: ['Git', 'GitLab', 'Git Flow', 'Jira', 'Scrum', 'Agile', 'CI/CD', 'Docker'] },
+  { label: 'IA aplicada', items: ['Claude Code', 'Agents', 'Skills'] },
 ];
 
 export const education = [

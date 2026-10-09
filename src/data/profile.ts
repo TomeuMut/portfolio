@@ -66,9 +66,9 @@ export const experience = [
 ];
 
 export const strengths = [
-  { number: '01', title: 'Criterio técnico', text: 'Experiencia de extremo a extremo: backend, interfaces y bases de datos. Una base para entender las decisiones técnicas y sus implicaciones en un proyecto.', label: 'Desarrollo full stack' },
-  { number: '02', title: 'Conexión con el cliente', text: 'Comunicación directa con clientes y gestión de proyectos. Entender las necesidades y trabajar con otros departamentos forma parte de mi recorrido.', label: 'Gestión y comunicación' },
-  { number: '03', title: 'Acompañar la entrega', text: 'En Refineria combiné desarrollo, gestión de proyectos y comunicación con clientes. En IT2b trabajé como Senior Software Developer / Project Manager. Quiero seguir creciendo en gestión de proyectos desde esa base técnica.', label: 'Gestión de proyectos' },
+  { number: '01', title: 'Analizar antes de construir', text: 'Antes de empezar, analizo el problema y busco una forma eficiente de resolverlo sin perder calidad. Mi experiencia full stack me ayuda a valorar las decisiones técnicas con una mentalidad abierta a nuevas soluciones.', label: 'Criterio técnico y eficiencia' },
+  { number: '02', title: 'Construir confianza', text: 'He gestionado proyectos en contacto directo con clientes, también en situaciones difíciles. Escuchar, comunicar con claridad y buscar soluciones me ha ayudado a construir relaciones de confianza a largo plazo.', label: 'Gestión de proyectos y clientes' },
+  { number: '03', title: 'Aprender en equipo', text: 'He liderado formaciones de frontend para becarios, compartiendo buenas prácticas y ayudándoles a construir una base sólida. Disfruto de un entorno cercano donde podamos aprender y mejorar juntos.', label: 'Formación y colaboración' },
 ];
 
 export const stack = [

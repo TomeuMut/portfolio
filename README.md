@@ -23,7 +23,7 @@ npm run preview
 
 The website supports English (`/en/`), Spanish (`/es/`), and Catalan (`/ca/`). The root URL redirects to Spanish. Each page provides a language selector and localized HTML language and metadata.
 
-- `src/data/profile.ts`: resume-based professional information.
+- `src/data/profile.ts`: resume-based professional information, GitHub profile, and selected public projects with translated descriptions.
 - `src/data/i18n.ts`: translated interface, career, education, and language content.
 - `app/components/PortfolioPage.vue`: shared Vue page layout.
 - `app/pages/[lang].vue`: language routing and validation.
@@ -31,6 +31,12 @@ The website supports English (`/en/`), Spanish (`/es/`), and Catalan (`/ca/`). T
 - `public/favicon.svg`: site identity.
 
 The original resume PDF, phone number, and postal address are excluded. No projects, metrics, or credentials have been invented. Future case studies should include real projects, personal contributions, and verifiable outcomes.
+
+## GitHub projects
+
+The projects section links to the [GitHub profile](https://github.com/TomeuMut) and highlights Ferment SaaS (frontend and API), Tomeu Ferments, and Librewrary. Descriptions and technologies were checked against their public repositories and README files. Librewrary is explicitly marked as on hold, following its README.
+
+Project information is curated locally and rendered in English, Spanish, and Catalan. The website does not call the GitHub API at runtime or require an API token. Edit the `projects` array in `src/data/profile.ts` to change the selection or update its descriptions.
 
 ## Git Flow
 

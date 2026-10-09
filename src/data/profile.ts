@@ -2,6 +2,7 @@ export const profile = {
   name: 'Bartomeu Mut Vidal',
   shortName: 'Bartomeu Mut',
   email: 'tomeumutvidal@gmail.com',
+  github: 'https://github.com/TomeuMut',
   location: 'Mallorca, España',
   title: 'Frontend Developer',
   description: 'Frontend Developer en OmniAccess con experiencia full stack, gestión de proyectos y comunicación con clientes. Mi siguiente paso: Project Manager.',
@@ -85,4 +86,43 @@ export const languages = [
   { name: 'Español', level: 'Nativo' },
   { name: 'Catalán', level: 'Nativo' },
   { name: 'Inglés', level: 'A2' },
+];
+
+export const projects = [
+  {
+    name: 'Ferment SaaS',
+    description: {
+      en: 'A fermentation management application with recipes, categories, fermenters, and production batches. A Nuxt frontend connected to a Laravel API.',
+      es: 'Aplicación para gestionar recetas de fermentación, categorías, fermentadores y lotes de producción. Un frontend Nuxt conectado a una API Laravel.',
+      ca: 'Aplicació per gestionar receptes de fermentació, categories, fermentadors i lots de producció. Un frontend Nuxt connectat a una API Laravel.',
+    },
+    technologies: ['Nuxt 4', 'Vue 3', 'TailwindCSS', 'Laravel', 'Docker'],
+    repositories: [
+      { label: 'Frontend', url: 'https://github.com/TomeuMut/Ferment-Saas-Frontend' },
+      { label: 'API', url: 'https://github.com/TomeuMut/Ferment-Saas-API' },
+    ],
+    paused: false,
+  },
+  {
+    name: 'Tomeu Ferments',
+    description: {
+      en: 'A digital presentation of Tomeu Ferments: a space for sharing handmade fermentation recipes, infusions, and other living preparations.',
+      es: 'Presentación digital de Tomeu Ferments: un espacio para compartir recetas artesanales de fermentados, macerados y otras preparaciones vivas.',
+      ca: 'Presentació digital de Tomeu Ferments: un espai per compartir receptes artesanals de fermentats, macerats i altres preparacions vives.',
+    },
+    technologies: ['OctoberCMS', 'PHP', 'TailwindCSS'],
+    repositories: [{ label: '', url: 'https://github.com/TomeuMut/tomeuferments' }],
+    paused: false,
+  },
+  {
+    name: 'Librewrary',
+    description: {
+      en: 'An open-source Laravel project for creating and sharing beer recipes, with a shared ingredient library. Development is currently on hold.',
+      es: 'Proyecto de código abierto con Laravel para crear y compartir recetas de cerveza, con una biblioteca de ingredientes. Su desarrollo está actualmente en pausa.',
+      ca: 'Projecte de codi obert amb Laravel per crear i compartir receptes de cervesa, amb una biblioteca d’ingredients. El desenvolupament està actualment en pausa.',
+    },
+    technologies: ['Laravel', 'PHP', 'Blade'],
+    repositories: [{ label: '', url: 'https://github.com/TomeuMut/librewrary' }],
+    paused: true,
+  },
 ];

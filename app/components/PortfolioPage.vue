@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { languageOptions, translations, type Language } from '../../src/data/i18n';
-import { profile } from '../../src/data/profile';
+import { profile, projects } from '../../src/data/profile';
 
 const props = defineProps<{ language: Language }>();
 const t = computed(() => translations[props.language]);
 const year = new Date().getFullYear();
-const sections = ['experience', 'approach', 'stack', 'contact'];
+const sections = ['experience', 'approach', 'projects', 'stack', 'contact'];
 
 function languagePath(language: Language) {
   return `/${language}/`;
@@ -35,7 +35,7 @@ useHead(() => ({
         </a>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-4">
           <nav :aria-label="t.home" class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm sm:gap-x-6">
-            <a v-for="(label, index) in t.nav" :key="label" :href="`#${sections[index]}`" class="nav-link" :class="{ 'font-semibold': index === 3 }">{{ label }}</a>
+            <a v-for="(label, index) in t.nav" :key="label" :href="`#${sections[index]}`" class="nav-link" :class="{ 'font-semibold': sections[index] === 'contact' }">{{ label }}</a>
           </nav>
           <nav :aria-label="t.language" class="flex gap-1 border-l border-slate-300 pl-4 text-xs font-semibold">
             <a v-for="option in languageOptions" :key="option.code" :href="languagePath(option.code)" :lang="option.code" :hreflang="option.code" :aria-label="option.name" :aria-current="option.code === language ? 'page' : undefined" class="rounded px-2 py-2 transition-colors" :class="option.code === language ? 'bg-ink text-mint' : 'text-slate-600 hover:bg-slate-200'">{{ option.label }}</a>
@@ -95,6 +95,24 @@ useHead(() => ({
               <p class="mt-5 text-base leading-relaxed text-slate-600">{{ job.summary }}</p>
               <ul v-if="job.points.length" class="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-600 marker:text-emerald-700"><li v-for="point in job.points" :key="point">{{ point }}</li></ul>
               <div class="mt-5 flex flex-wrap gap-2"><span v-for="tag in job.tags" :key="tag" class="rounded-sm bg-slate-100 px-3 py-1.5 text-xs text-slate-600">{{ tag }}</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title" class="border-b border-slate-200 py-20 md:py-28">
+        <div class="shell">
+          <div class="grid gap-6 md:grid-cols-2 md:items-end">
+            <div><p class="eyebrow mb-5 text-emerald-800">{{ t.projectsLabel }}</p><h2 id="projects-title" class="section-heading">{{ t.projectsTitle[0] }}<br /><span class="serif italic">{{ t.projectsTitle[1] }}</span></h2></div>
+            <div class="max-w-lg md:justify-self-end"><p class="text-base leading-relaxed text-slate-600">{{ t.projectsText }}</p><a :href="profile.github" class="mt-5 inline-block border-b border-emerald-800 pb-1 text-sm font-semibold text-emerald-800 hover:text-ink">{{ t.githubProfile }}</a></div>
+          </div>
+          <div class="mt-12 grid gap-5 lg:grid-cols-3">
+            <article v-for="(project, index) in projects" :key="project.name" class="flex min-w-0 flex-col border border-slate-200 bg-white p-7">
+              <div class="flex items-center justify-between gap-3"><span class="font-mono text-sm text-emerald-800" aria-hidden="true">0{{ index + 1 }} /</span><span v-if="project.paused" class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">{{ t.pausedLabel }}</span></div>
+              <h3 class="mt-7 text-2xl font-semibold tracking-tight">{{ project.name }}</h3>
+              <p class="mt-4 text-base leading-relaxed text-slate-600">{{ project.description[language] }}</p>
+              <ul :aria-label="t.stackLabel" class="mt-6 flex flex-wrap gap-2"><li v-for="technology in project.technologies" :key="technology" class="rounded-sm bg-slate-100 px-3 py-1.5 text-xs text-slate-600">{{ technology }}</li></ul>
+              <div class="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-8"><a v-for="repository in project.repositories" :key="repository.url" :href="repository.url" :aria-label="`${t.repositoryLabel}: ${project.name}${repository.label ? ` · ${repository.label}` : ''}`" class="border-b border-emerald-800 pb-1 text-sm font-semibold text-emerald-800 hover:text-ink">{{ repository.label || t.repositoryLabel }}</a></div>
             </article>
           </div>
         </div>

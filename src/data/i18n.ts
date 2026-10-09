@@ -14,7 +14,7 @@ const es = {
   nav: ['Sobre mí', 'Experiencia', 'Mi enfoque', 'GitHub', 'Stack', 'Hablemos'],
   aboutLabel: 'Sobre mí', aboutTitle: ['Curioso por naturaleza.', 'Atento a los detalles.'],
   aboutParagraphs: [
-    'Soy de Campos, Mallorca. Fuera del código, disfruto de la música, la fermentación y la vida rural. Dedico buena parte de mi tiempo a cuidar mi finca y a trabajar la tierra, siguiendo el ritmo de las estaciones.',
+    'Mallorca. Fuera del código, disfruto de la música, la fermentación y la vida rural. Dedico buena parte de mi tiempo a cuidar mi finca y a trabajar la tierra, siguiendo el ritmo de las estaciones.',
     'Disfruto trabajando con las manos y entendiendo cómo se hacen las cosas. Esa curiosidad también llega a mi trabajo: cuidar los detalles, hablar con sinceridad y dedicar tiempo a hacer las cosas bien.',
   ],
   aboutInterests: ['Música', 'Fermentación', 'Vida rural', 'Cuidado de la tierra'],
@@ -51,7 +51,7 @@ const en: typeof es = {
   nav: ['About me', 'Experience', 'My approach', 'GitHub', 'Stack', 'Let’s talk'],
   aboutLabel: 'About me', aboutTitle: ['Curious by nature.', 'Attentive to detail.'],
   aboutParagraphs: [
-    'I’m from Campos, Mallorca. Away from code, I enjoy music, fermentation, and rural life. I spend much of my time caring for my land and working with the soil, following the rhythm of the seasons.',
+    'Mallorca. Away from code, I enjoy music, fermentation, and rural life. I spend much of my time caring for my land and working with the soil, following the rhythm of the seasons.',
     'I enjoy working with my hands and understanding how things are made. That curiosity carries into my work: paying attention to detail, speaking honestly, and taking the time to do things well.',
   ],
   aboutInterests: ['Music', 'Fermentation', 'Rural life', 'Caring for the land'],
@@ -113,7 +113,7 @@ const ca: typeof es = {
   nav: ['Sobre mi', 'Experiència', 'El meu enfocament', 'GitHub', 'Stack', 'Parlem'],
   aboutLabel: 'Sobre mi', aboutTitle: ['Curiós per naturalesa.', 'Atent als detalls.'],
   aboutParagraphs: [
-    'Som de Campos, Mallorca. Fora del codi, gaudesc de la música, la fermentació i la vida rural. Dedic bona part del meu temps a cuidar la meva finca i a treballar la terra, seguint el ritme de les estacions.',
+    'Mallorca. Fora del codi, gaudesc de la música, la fermentació i la vida rural. Dedic bona part del meu temps a cuidar la meva finca i a treballar la terra, seguint el ritme de les estacions.',
     'Gaudesc treballant amb les mans i entenent com es fan les coses. Aquesta curiositat també arriba a la meva feina: cuidar els detalls, parlar amb sinceritat i dedicar temps a fer les coses bé.',
   ],
   aboutInterests: ['Música', 'Fermentació', 'Vida rural', 'Cura de la terra'],

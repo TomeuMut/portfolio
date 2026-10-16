@@ -51,12 +51,12 @@ onBeforeUnmount(() => { sectionObserver?.disconnect(); window.removeEventListene
 
 useHead(() => ({
   htmlAttrs: { lang: props.language },
-  title: `${profile.name} · ${profile.title}`,
+  title: `${profile.name} · ${t.value.pageTitle}`,
   meta: [
     { name: 'description', content: t.value.description },
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: t.value.locale },
-    { property: 'og:title', content: `${profile.name} · ${t.value.eyebrow}` },
+    { property: 'og:title', content: `${profile.name} · ${t.value.pageTitle}` },
     { property: 'og:description', content: t.value.description },
   ],
 }));
@@ -75,7 +75,7 @@ useHead(() => ({
           <component :is="menuOpen ? PhX : PhList" :size="24" aria-hidden="true" focusable="false" />
         </button>
       </div>
-      <p class="sidebar-role">{{ profile.title }}</p>
+      <p class="sidebar-role">{{ t.navigationProfile }}</p>
       <nav id="primary-navigation" class="side-navigation" :class="{ 'is-open': menuOpen }" :aria-label="t.home">
         <a v-for="(item, index) in navigation" :key="item.id" :href="`#${item.id}`" :aria-current="activeSection === item.id ? 'location' : undefined" @click="navigateTo(item.id)">
           <span class="nav-number" aria-hidden="true">0{{ index + 1 }}</span>{{ item.label }}
@@ -115,7 +115,7 @@ useHead(() => ({
               <div class="palette-strip" aria-hidden="true"><span /><span /><span /><span /></div>
             </figure>
           </div>
-          <div class="page-shell"><div class="direction-banner"><PhKanban :size="28" weight="duotone" aria-hidden="true" focusable="false" /><div><span class="eyebrow">{{ t.nextStep }}</span><p>Project Manager</p></div><p class="direction-description">{{ t.ambition }}</p></div></div>
+          <div class="page-shell"><div class="direction-banner"><PhKanban :size="28" weight="duotone" aria-hidden="true" focusable="false" /><div><span class="eyebrow">{{ t.nextStep }}</span><p>{{ t.focusTitle }}</p></div><p class="direction-description">{{ t.ambition }}</p></div></div>
         </section>
 
         <section id="experience" tabindex="-1" aria-labelledby="experience-title" class="section-block">

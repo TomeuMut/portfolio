@@ -90,10 +90,10 @@ p { margin: 0; }
 .palette-strip span:nth-child(2) { background: var(--color-accent); }
 .palette-strip span:nth-child(3) { background: var(--color-secondary); }
 .palette-strip span:nth-child(4) { background: var(--color-primary); }
-.direction-banner { display: flex; align-items: center; gap: 1.2rem; background: var(--color-surface-muted); padding: 1.5rem; margin-top: 3.5rem; border-radius: 0 12px 12px 0; }
-.direction-banner > div { flex-shrink: 0; }
+.direction-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem; background: var(--color-surface-muted); padding: 1.5rem; margin-top: 3.5rem; border-radius: 0 12px 12px 0; }
+.direction-banner > div { flex: 0 1 19rem; min-width: 0; }
 .direction-banner > div > p { font-size: 1.35rem; font-weight: 650; }
-.direction-description { margin-left: auto; max-width: 29rem; font-size: .9rem; line-height: 1.7; }
+.direction-description { flex: 1 1 18rem; margin-left: auto; max-width: 29rem; font-size: .9rem; line-height: 1.7; }
 .section-block { padding: 5rem 0; }
 .section-intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: end; margin-bottom: 2.7rem; }
 .section-intro > p, .section-intro > div > p:not(.eyebrow) { font-size: .94rem; line-height: 1.8; }

@@ -8,7 +8,8 @@ export const profile = {
   fermentsInstagram: 'https://www.instagram.com/tomeuferments/',
   location: 'Mallorca, España',
   title: 'Frontend Developer',
-  description: 'Frontend Developer en OmniAccess con experiencia full stack, gestión de proyectos y comunicación con clientes. Mi siguiente paso: Project Manager.',
+  headline: 'Desarrollo de software y gestión de proyectos',
+  description: 'Bartomeu Mut Vidal. Desarrollo web desde 2017 y gestión de proyectos desde 2019. Experiencia full stack, coordinación de equipos y comunicación con clientes.',
 };
 
 export const experience = [
@@ -31,26 +32,28 @@ export const experience = [
     role: 'Senior Software Developer / Project Manager',
     period: 'Ene. — oct. 2025',
     location: 'Palma de Mallorca',
-    summary: 'Desarrollo web full stack y colaboración con clientes y equipos para dar respuesta a las necesidades de cada proyecto.',
+    summary: 'Gestión integral de proyectos de software con equipos pequeños, combinando la relación con clientes, la coordinación del desarrollo y el trabajo full stack cuando era necesario.',
     points: [
-      'Desarrollo de backend con Symfony y frontend con Angular.',
-      'Atención directa a clientes y colaboración entre departamentos.',
+      'Contacto directo con clientes, análisis y definición de requisitos.',
+      'Preparación de presupuestos, planificación y organización de los proyectos.',
+      'Coordinación del desarrollo, seguimiento de plazos y gestión de entregas.',
+      'Desarrollo full stack con Symfony y Angular; integración de APIs, MySQL y SQL Server.',
       'Interfaces con HTML5, CSS3, TailwindCSS, Bootstrap, JavaScript y jQuery.',
-      'Integración de APIs y trabajo con MySQL y SQL Server.',
       'Git y Git Flow, Scrum y Agile, e integración y entrega continuas (CI/CD).',
     ],
-    tags: ['Symfony', 'Angular', 'TailwindCSS', 'Clientes'],
+    tags: ['Gestión de proyectos', 'Clientes', 'Symfony', 'Angular'],
   },
   {
     company: 'Refineria Web',
     role: 'Desarrollador de aplicaciones web',
     period: 'Mar. 2017 — dic. 2024',
     location: 'Palma de Mallorca',
-    summary: 'Una etapa de desarrollo, gestión de proyectos y acompañamiento a nuevos talentos, trabajando en contacto directo con clientes.',
+    summary: 'Desarrollo web a medida en equipos pequeños. A partir de 2019, también asumí responsabilidades de gestión de algunos clientes y proyectos, junto con el trabajo de desarrollo.',
     points: [
+      'Comunicación directa con clientes, recogida y análisis de requisitos y participación en la planificación de soluciones.',
+      'Coordinación con otros desarrolladores, seguimiento de tareas y entregas, y resolución y comunicación de incidencias.',
       'Desarrollo con PHP, Laravel y OctoberCMS; frontend con Vue y Nuxt.',
-      'Gestión de proyectos y comunicación directa con clientes.',
-      'Formación y mentoría de nuevos talentos, promoviendo buenas prácticas.',
+      'Formación y mentoría de desarrolladores junior, compartiendo buenas prácticas.',
       'Coimpartición de un taller de automatización con IA en Refineria, con Make y Zapier.',
       'Gestión de datos y documentación con MySQL y Microsoft SQL.',
     ],
@@ -61,16 +64,16 @@ export const experience = [
     role: 'Técnico de mantenimiento · Prácticas',
     period: 'Mar. — jun. 2014',
     location: 'Palma de Mallorca',
-    summary: 'Soporte informático en centros de salud de IB Salut: configuración y mantenimiento de equipos, atención a usuarios y resolución de incidencias.',
+    summary: 'Soporte informático en centros de salud: configuración y mantenimiento de equipos, atención a usuarios y resolución de incidencias.',
     points: [],
     tags: ['Soporte técnico', 'Atención a usuarios'],
   },
 ];
 
 export const strengths = [
-  { number: '01', title: 'Analizar antes de construir', text: 'Antes de empezar, analizo el problema y busco una forma eficiente de resolverlo sin perder calidad. Mi experiencia full stack me ayuda a valorar las decisiones técnicas con una mentalidad abierta a nuevas soluciones.', label: 'Criterio técnico y eficiencia' },
-  { number: '02', title: 'Construir confianza', text: 'He gestionado proyectos en contacto directo con clientes, también en situaciones difíciles. Escuchar, comunicar con claridad y buscar soluciones me ha ayudado a construir relaciones de confianza a largo plazo.', label: 'Gestión de proyectos y clientes' },
-  { number: '03', title: 'Aprender en equipo', text: 'He liderado formaciones de frontend para becarios, compartiendo buenas prácticas y ayudándoles a construir una base sólida. Disfruto de un entorno cercano donde podamos aprender y mejorar juntos.', label: 'Formación y colaboración' },
+  { number: '01', title: 'Analizar antes de construir', text: 'Escucho las necesidades, analizo el problema y valoro alternativas antes de proponer una solución. Mi experiencia full stack me ayuda a tomar decisiones técnicas teniendo en cuenta el contexto del proyecto.', label: 'Análisis y criterio técnico' },
+  { number: '02', title: 'Construir confianza', text: 'Trabajo con clientes y equipos para aclarar necesidades, acordar expectativas y mantener una comunicación cercana. Cuando surge un problema, busco soluciones y explico los siguientes pasos con claridad.', label: 'Comunicación y gestión de expectativas' },
+  { number: '03', title: 'Aprender y trabajar en equipo', text: 'Comparto conocimientos, acompaño a desarrolladores junior y aprendo de las personas con las que trabajo. Valoro la colaboración y las buenas prácticas que nos ayudan a mejorar juntos.', label: 'Colaboración y mentoría' },
 ];
 
 export const stack = [
@@ -82,8 +85,8 @@ export const stack = [
 ];
 
 export const education = [
-  { title: 'Desarrollo de Aplicaciones Web', school: 'IES Manacor', year: '2017' },
-  { title: 'Sistemas Microinformáticos y Redes', school: 'IES Francesc de Borja Moll', year: '2014' },
+  { title: 'Grado Superior en Desarrollo de Aplicaciones Web', school: 'IES Manacor', year: '2017' },
+  { title: 'Grado Medio en Sistemas Microinformáticos y Redes', school: 'IES Francesc de Borja Moll', year: '2014' },
 ];
 
 export const languages = [

@@ -119,11 +119,11 @@ export const projects: Project[] = [
   {
     name: 'Tomeu Ferments',
     description: {
-      en: 'My personal project exploring fermentation, maceration, and traditional recipes. I share this interest on Instagram, alongside a website built with OctoberCMS and TailwindCSS.',
-      es: 'Mi proyecto personal de fermentación, maceración y recetas tradicionales. Comparto esta afición en Instagram y la acompaño con una web desarrollada con OctoberCMS y TailwindCSS.',
-      ca: 'El meu projecte personal de fermentació, maceració i receptes tradicionals. Compartesc aquesta afició a Instagram i l’acompany amb una web desenvolupada amb OctoberCMS i TailwindCSS.',
+      en: 'My personal project exploring fermentation, maceration, and traditional recipes. I share this interest on Instagram, alongside a website built with Nuxt 4, Vue 3, TypeScript and TailwindCSS.',
+      es: 'Mi proyecto personal de fermentación, maceración y recetas tradicionales. Comparto esta afición en Instagram y la acompaño con una web desarrollada con Nuxt 4, Vue 3, TypeScript y TailwindCSS.',
+      ca: 'El meu projecte personal de fermentació, maceració i receptes tradicionals. Compartesc aquesta afició a Instagram i l’acompany amb una web desenvolupada amb Nuxt 4, Vue 3, TypeScript i TailwindCSS.',
     },
-    technologies: ['OctoberCMS', 'PHP', 'TailwindCSS'],
+    technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'TailwindCSS'],
     repositories: [{ label: '', url: 'https://github.com/TomeuMut/tomeuferments' }],
     instagram: profile.fermentsInstagram,
     paused: false,

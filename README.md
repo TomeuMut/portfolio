@@ -96,3 +96,8 @@ Reference: [Codex instructions with AGENTS.md](https://developers.openai.com/cod
 Type checking and static generation passed for English, Spanish, and Catalan. The redesigned page was visually reviewed in desktop and mobile Chrome after the integrated browser proved unavailable. At a 390 px mobile viewport, the document had no horizontal overflow, the portrait loaded, and the menu expanded with the expected accessible state. Previous content checks covered language metadata, navigation targets, contact links, asset paths, and exclusion of the private phone number.
 
 The dependency audit still reports advisories in transitive Nuxt tooling dependencies after compatible fixes. Do not use a forced downgrade as an automatic remedy. Development tools are disabled in the site configuration; Vercel serves the generated static files, not a Nuxt development server.
+
+
+## Design review
+
+The focused accessibility, navigation, responsive-layout and content improvements are recorded in [docs/design-review.md](docs/design-review.md). The review preserves the existing visual identity and all three languages. Type checking, static generation and generated-output anchor/image checks pass; the final Impeccable detector reports no findings. Browser screenshots and interactive verification remain pending because no browser was connected during this run.

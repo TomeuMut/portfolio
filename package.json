@@ -11,7 +11,9 @@
     "build": "nuxt generate",
     "preview": "nuxt preview --host 127.0.0.1",
     "check": "nuxt typecheck",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --max-warnings 0",
+    "test:smoke": "playwright test"
   },
   "dependencies": {
     "@phosphor-icons/vue": "^2.2.1",
@@ -22,7 +24,13 @@
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
+    "eslint": "^10.13.0",
+    "eslint-plugin-vue": "^10.11.1",
+    "globals": "^16.5.0",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
     "vue-tsc": "^3.3.12"
   },
   "overrides": {
